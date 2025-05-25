@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Treats</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+    <section class="header">
+        <a href="#home" class="logo"> <i class="fa-solid fa-cheese"></i> Sweet Treats </a>
+
+        <nav class="navbar">
+            <a href="#home">Início</a>
+            <a href="#sobre">Sobre Nós</a>
+            <a href="#cardapio">Cardápio</a>
+            <a href="#pedidos">Localização</a>
+            <a href="#pedidos">Pedidos</a>
+        </nav>
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </section>
+
+    <section class="home" id="home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide" style="background: url(imagens/k.jpg) no-repeat;">
+                    <div class="content">
+                        <span>Prazer em cada fatia!</span>
+                        <h3>Venha Provar</h3>
+                        <a href="#cardapio" class="btn">Confira nosso cardápio</a>
+                    </div>
+                </div>
+                <div class="swiper-slide slide" style="background: url(imagens/chocolate.jpg) no-repeat;">
+                    <div class="content">
+                        <span>Colecionamos</span>
+                        <h3>Experiência</h3>
+                        <a href="#cardapio" class="btn">Clique aqui</a>
+                    </div>
+                </div>
+                <div class="swiper-slide slide" style="background: url(imagens/e.jpg) no-repeat;">
+                    <div class="content">
+                        <span>Cultive</span>
+                        <h3>Memórias</h3>
+                        <a href="#cardapio" class="btn">Clique aqui</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div> 
+        </div>
+    </section>
+    
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <section class="about" id="sobre">
+        <div class="about-container">
+            <video controls width="500" height="300px" autoplay muted poster="imagens/about.jpg">
+                <source src="video/CAKE.mp4">
+            </video>
+    
+            <div class="content">
+                <h3 class="title">Seja bem-vindo!</h3>
+                <p>
+                    A Sweet Treats é uma confeitaria familiar de origem francesa, 
+                    que une sofisticação e tradição. Nossos bolos são feitos com ingredientes selecionados e técnicas artesanais, 
+                    trazendo elegância e sabor em cada criação. 
+                    Transformamos momentos especiais em experiências únicas, 
+                    com o cuidado e a arte da pâtisserie francesa.
+                </p>
+                <a href="#sobre" class="btn">Saiba mais</a>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="food" id="cardapio">
+        <div class="heading">
+            <span>Os mais pedidos do nosso</span>
+            <h3>CARDÁPIO</h3>
+        </div>
+    
+        <div class="swiper food-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide" data-name="food-1">
+                    <img src="imagens/bolo4.jpg" alt="">
+                    <h3>CupCake Red Fruits</h3>
+                    <div class="price">Consulta valores</div>
+                </div> 
+                <div class="swiper-slide slide" data-name="food-2">
+                    <img src="imagens/bolo2.jpg" alt="">
+                    <h3>Black Forest cake </h3>
+                    <div class="price">Consulta valores</div>
+                </div> 
+                <div class="swiper-slide slide" data-name="food-3">
+                    <img src="imagens/bolo3.jpg" alt="">
+                    <h3>Blueberry pie</h3>
+                    <div class="price">Consulta valores</div>
+                </div>
+                <div class="swiper-slide slide" data-name="food-4">
+                    <img src="imagens/bolo6.jpg" alt="">
+                    <h3>Pistachio cupcake</h3>
+                    <div class="price">Consulta valores</div>
+                </div> 
+                <div class="swiper-slide slide" data-name="food-5">
+                    <img src="imagens/bolo7.jpg" alt="">
+                    <h3>BeeCake</h3>
+                    <div class="price">Consulta valores</div>
+                </div> 
+            </div> 
+            <div class="swiper-pagination"></div> 
+        </div> 
+    </section>
+
+    <section id="pedidos" class="order">
+        <div class="heading">
+            <span>Peça agora</span>
+            <h3>Delivery</h3>
+        </div>
+    
+        <form action="">
+            <div class="box-container">
+                <div class="box">
+                    <div class="inputBox">
+                        <span>Nome completo</span>
+                        <input type="text" placeholder="Escreva seu nome">
+                    </div>
+                    <div class="inputBox">
+                        <span>Número</span>
+                        <input type="number" placeholder="Escreva seu número">
+                    </div>
+                    <div class="inputBox">
+                        <span>Quantos</span>
+                        <input type="number" placeholder="Quantos você deseja">
+                    </div>
+                    <div class="inputBox">
+                        <span>Seu endereço</span>
+                        <textarea name="" placeholder="Escreva o seu endereço" id="" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="inputBox">
+                        <span>Nome do Bolo</span>
+                        <input type="text" placeholder="Escreva seu pedido">
+                    </div>
+                    <div class="inputBox">
+                        <span>Quando você deseja</span>
+                        <input type="datetime-local">
+                    </div>
+                    <div class="inputBox">
+                        <span>Detalhes do pedido</span>
+                        <input type="text" placeholder="Especifique o seu pedido">
+                    </div>
+                    <div class="inputBox">
+                        <span>Nosso endereço</span>
+                        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3704.7732560258764!2d-48.179469923964994!3d-21.789034898883788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b8f3e1218c0083%3A0x98300a68dd14d0b5!2sAv.%20Osorio%2C%20120%20-%20Centro%2C%20Araraquara%20-%20SP%2C%2014801-308!5e0!3m2!1spt-BR!2sbr!4v1692195654547!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+            <input type="submit" value="Fazer Pedido" class="btn">
+        </form>
+    </section>
+    
+
+    <footer>
+        <div class="footer-content">
+            <h3>Sweet Treats</h3>
+            <p>A melhor confeitaria da cidade!</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Sweet Treats. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.home-slider', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            loop: true,
+        });
+
+        const foodSwiper = new Swiper('.food-slider', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            loop: true,
+        });
+    </script>
+   <div id="discountModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Você ganhou 20% de desconto!</h2>
+        <p>Obrigado por visitar a Sweet Treats! Use o código <strong>20OFF</strong> na sua primeira compra.</p>
+        <button id="closeModal" class="btn">Fechar</button>
+    </div>
+</div>
+<script>
+    var modal = document.getElementById("discountModal");
+    var closeModalBtn = document.getElementById("closeModal");
+    var closeSpan = document.getElementsByClassName("close")[0];
+
+    // Mostrar o modal sempre que a página for carregada
+    modal.style.display = "block"; 
+
+    closeModalBtn.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    closeSpan.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+</body>
+</html>
